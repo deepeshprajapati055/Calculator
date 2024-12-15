@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url(/Calculator/img/imageOfBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background: #009FFF;
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    background: linear-gradient(to right, #ec2F4B, #009FFF); 
+}
+.calculator{
+    backdrop-filter: blur(10px);
+    /* background-color: #85A98F; */
+    background: transparent;
+    width: 40%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 7px #1B1833;
+}
+.cal-btn{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 0px 0px 2px #1B1833;
+    border-radius: 7px;
+}
+.input::placeholder{
+    text-align: center;
+}
+
+.btn{
+    min-width: 112px;
+    padding: 10px;
+    margin: 3px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 60px;
+    box-shadow: 3px 4px 5px #1B1833;
+}
+.btn:hover{
+    color:#009FFF;
+    border: 3px ridge;
+    box-shadow: 0px 0px 3px #1B1833;
+}
+#btn1{
+    background-color: #29947f;
+    color: black;
+}
+
+.ac-btn{
+    background-color: #f03535;
+}
+.c-btn{
+    background-color: #0d6134;
+}
+
+#downbtn{
+    width: 47%;
+}
+#downbtn1{
+    width: 47%;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .input {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .input {
+        height: 45px;
+        font-size: 1rem;
+    }
+}

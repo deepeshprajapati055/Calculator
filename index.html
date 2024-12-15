@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- HTML Code -->
+    <div class="calculator">
+        <input type="text" class="input" id="calcInput" placeholder="Calculator" readonly>
+        <div class="cal-btn">
+            <button class="btn c-btn" onclick="clearLast()">C</button>
+            <button class="btn ac-btn" onclick="clearAll()">AC</button>
+            <button class="btn" id="btn1" onclick="calculate()">=</button>
+            <button class="btn" onclick="append('/')">/</button>
+            <button class="btn" onclick="append('1')">1</button>
+            <button class="btn" onclick="append('2')">2</button>
+            <button class="btn" onclick="append('3')">3</button>
+            <button class="btn" onclick="append('+')">+</button><br>
+            <button class="btn" onclick="append('4')">4</button>
+            <button class="btn" onclick="append('5')">5</button>
+            <button class="btn" onclick="append('6')">6</button>
+            <button class="btn" onclick="append('-')">-</button><br>
+            <button class="btn" onclick="append('7')">7</button>
+            <button class="btn" onclick="append('8')">8</button>
+            <button class="btn" onclick="append('9')">9</button>
+            <button class="btn" onclick="append('*')">*</button><br>
+            <button class="btn" id="downbtn" onclick="append('0')">0</button>
+            <button class="btn btn1" id="downbtn1" onclick="calculate()">ENTER</button>
+        </div>
+    </div>
+
+    <!-- Java Script -->
+    <script src="/script.js"></script>
+</body>
+</html>
